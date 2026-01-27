@@ -66,7 +66,7 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 1px;
   padding: var(--card-content-padding);
 }
 
@@ -132,7 +132,7 @@
 .card__label {
   position: absolute;
   top: 23px;
-  right: 11px;
+  right: var(--card-label-position-right);
   mix-blend-mode: hard-light;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
@@ -199,8 +199,8 @@
 .button-save {
   display: block;
   inline-size: var(--save-button-inline-size);
-  padding: 15px 17px;
-  margin-block: 50px 100px;
+  padding: var(--save-button-padding);
+  margin-block: 72px 100px;
   margin-inline: auto;
 }
 
@@ -230,8 +230,8 @@
 .dialog__save {
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   flex-direction: column;
-  gap: 30px;
-  padding: 30px;
+  gap: var(--dialog-save-gap);
+  padding: var(--dialog-save-padding);
   border: 2px #000 solid;
 }
 

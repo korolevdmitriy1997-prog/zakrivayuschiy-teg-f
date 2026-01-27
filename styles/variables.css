@@ -17,19 +17,23 @@
     ),
     repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --main-bg-color: #fff;
-  --card-title-font-weight: 700;
-  --main-font-weight: 400;
+  --card-title-font-weight: 715;
+  --main-font-weight: 410;
   --card-font-size: 1.125rem;
   --card-paragraph-margin-block-end: 27px;
   --card-margin-block-end: 50px;
   --card-content-padding: 25px;
+  --card-label-position-right: 11px;
   --header-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) 0;
   --header-margin-block: 100px;
   --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-title-margin-block-end: 20px;
   --header-descr-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --text-stroke-color: #fff;
+  --save-button-padding: 15px 17px;
   --save-button-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  --dialog-save-gap: 30px;
+  --dialog-save-padding: 27px;
   --heart-main-color: #ff0000;
   --heart-contour-color: #000;
   --heart-sparks-color: #ff0000;
@@ -41,13 +45,16 @@
   }
 }
 
-@media (width < 375px) {
+@media (width <= 375px) {
   :root {
     --header-title-font-size: clamp(
       1.875rem,
       -5.0341rem + 34.5455vw,
       3.0625rem
     );
-    --save-button-inline-size: min-content;
+    --card-label-position-right: 25px;
+    --save-button-padding: 16px 17px;
+      --dialog-save-gap:29px;
+  --dialog-save-padding:37px;
   }
 }
